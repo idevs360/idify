@@ -1,0 +1,114 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.heading {
+	text-align: center;
+}
+
+.action-btns {
+	display: flex;
+	justify-content: space-between;
+}
+
+.search-btn {
+	width: 200px;
+}
+
+.gallary {
+	display: flex;
+}
+
+/* Id card section */
+.id-card {
+	width: 300px;
+	background-color: #eaf7f9;
+	border-radius: 10px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+	padding: 20px;
+	text-align: center;
+	position: relative; /* Keep this to allow stacking context */
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	/* Smooth transition */
+	z-index: 1; /* Default z-index */
+}
+
+.id-card-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent */
+}
+
+.id-card-link:hover {
+    /* Optional: change cursor to pointer */
+    cursor: pointer;
+}
+
+.id-card:hover {
+	transform: scale(1.05); /* Slightly increase size */
+	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+	/* Increase shadow for elevation effect */
+	z-index: 10; /* Bring the hovered card to the front */
+}
+
+.card-header {
+	background-color: #28b5b5;
+	padding: 10px 0;
+	color: white;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.logo {
+	width: 50px;
+	height: auto;
+	/* mix-blend-mode: darken; */
+}
+
+h2 {
+	margin: 5px 0;
+	font-size: 18px;
+}
+
+.profile-picture {
+	margin: 15px 0;
+}
+
+.profile-img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 3px solid #fff;
+}
+
+h3 {
+	font-size: 20px;
+	margin: 10px 0;
+}
+
+.title {
+	font-size: 16px;
+	color: gray;
+}
+
+.details {
+	margin-top: 10px;
+	font-size: 14px;
+	text-align: left;
+}
+
+.details p {
+	margin: 5px 0;
+}
+
+.barcode {
+	margin-top: 20px;
+	mix-blend-mode: darken;
+}
+
+.barcode img {
+	width: 80%;
+	height: 40px;
+	margin-bottom: 10px;
+}
