@@ -2,7 +2,7 @@ $(document).ready(function() {
 });
 
 function previewImage(e) {
-    const container = document.getElementById('preview-container');
+    const container = document.getElementById('uploaded-image');
     const file = e.target.files[0];
     
     // Clear the container before appending a new image
